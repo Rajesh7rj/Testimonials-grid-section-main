@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+  background-color: hsl(0, 0%, 81%);
+}
+
+img{
+  border-radius: 100%;
+  width: 30px;
+  border: 2px solid hsl(0, 0%, 81%);
+  float: left;
+  margin-right: 20px;
+}
+
+.main{
+  width: 85%;
+  display: grid;
+  grid-template-columns: fit-content(30%);
+  gap:20px;
+  margin :0 auto;
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.div1{
+  background-color: hsl(263, 55%, 52%);
+  background-image: url("images/bg-pattern-quotation.svg") ;
+  border-image: repeat;
+  background-repeat: no-repeat;
+  background-position: 19rem 0;
+  background-size: 7rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  grid-column: 1/3;
+}
+
+.div2{
+  padding: 1.5rem;
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  grid-column: 3/4;
+}
+
+.div3{
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+      grid-column: 1 ;
+}
+
+.div4{
+  padding: 1.5rem;
+  background-color:  hsl(219, 29%, 14%);
+  border-radius: 10px;
+  grid-column: 2/ 4;
+}
+
+.div5{
+  width: 80%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #fff;
+  grid-column: 4 / 5;
+  grid-row:  1 / 3;
+}
+
+.div1 img,  .div4 img{
+  border-color: hsl(263, 77%, 74%);
+}
+.div3 .review,.div3 .name{
+  color: black;
+}
+.div5 .review, .div5 .name{
+  color: black;
+}
+
+.name{
+  margin-top: 2px;
+  font-size: 13px;
+}
+.review{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.vd{
+  margin-bottom: 20px;
+}
+
+.moreInfo{
+  line-height: 1.5;
+}
+
+.div3 .moreInfo{
+  opacity:1.9;
+}
+
+.review, .name{
+  color: #fff;
+}
+
+.vd, .moreInfo{
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+                  /* ----------- */
+
+@media (max-width:1200px) and (max-width:1100px){
+.div1{
+  background-position: 17rem 0;
+}
+}
+
+@media (max-width:920px){
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .div1{
+    background-position: 34rem 0;
+  }
+  .div5{
+    width: auto;
+  }
+  
+}
+
+@media (max-width:800px){
+  .div1{
+    background-position: 30rem 0;
+  }
+  }
+  
+@media (max-width:700px){
+    .div1{
+      background-position: 23rem 0;
+    }
+    }
+    
+  @media (max-width:600px) and (max-width:500px){
+      .div1{
+        background-position: 19rem 0;
+      }
+      }
